@@ -21,32 +21,27 @@ int main() {
     
     
     
+  
     
-    printf("digite o nome da cidade: ");
+  printf("Informe o estado:");
+  scanf("%s",estado);
+ 
+  printf("digite o nome da cidade: ");
     scanf("%s",cidade);
    
-
     printf("Infome o código da carta: ");
    scanf("%s", codigo );
    
-
-   printf("Informe o estado:");
-   scanf("%s",estado);
-  
-
    printf("Informe o numero da população: ");
    scanf("%d",&populacao);
-   printf("A população é de: %d pessoas \n", populacao);
-
+   
    printf("Quantos pontos turisticos a cidade posssui?");
    scanf("%d",&pontoturisticos);
    
-
    printf("Informe o valor do pib: ");
    scanf("%f", &pib);
    
-
-   printf("Quan o tamanho em km? ");
+   printf("Quan o tamanho em km?\n ");
    scanf("%f",&km);
   
 
@@ -77,11 +72,15 @@ int main() {
 
   printf("Quan o tamanho em km1? ");
   scanf("%f",&km1);
- 
 
+  float dp =(float)(populacao/km);
+  float pbc = (float)(pib/populacao);
+  float dp1 = (float)(populacao1/km1);
+  float pbc1 = (float)(pib1/populacao1);
+ 
   // impressao da carta 01
 
-  printf("carta 01");
+  printf("carta 1\n");
   printf("O estado é: %s\n", estado);
   printf(" o código é: %s\n",codigo);
   printf("A cidade informada é: %s\n ",cidade);
@@ -89,7 +88,8 @@ int main() {
   printf("O tamanho é de %f km \n", km);
   printf("O pib é: %f\n",pib);
   printf("A cidade possui %d pontos turisticos \n", pontoturisticos);
-
+  printf("a densidade populacional é de %f\n , por km.", dp);
+  printf("O pib per capita é de: R$ %f por pessoa\n", pbc);
   //impressao carta02
 
   printf("Carta 2\n");
@@ -100,7 +100,8 @@ int main() {
   printf("O tamanho é de %f km \n", km1);
   printf("O pib é: %f\n",pib1);
   printf("A cidade possui %d pontos turisticos \n", pontoturisticos1);
-
+  printf("a densidade populacional é de %f\n , por km.", dp1);
+  printf("O pib per capita é de: R$ %f\n por pessoa", pbc1);
     // Exibição dos Dados das Cartas:
     // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
     // Exiba os valores inseridos para cada atributo da cidade, um por linha.
