@@ -77,7 +77,8 @@ int main() {
   float pbc = (float)(pib/populacao);
   float dp1 = (float)(populacao1/km1);
   float pbc1 = (float)(pib1/populacao1);
- 
+  float SuperPoder = ((float)populacao+km+pib+(float)+pbc+dp);
+  float SuperPoder1 =((float)+km1+pib1+(float)+pbc1+dp1);
   // impressao da carta 01
 
   printf("carta 1\n");
@@ -90,6 +91,7 @@ int main() {
   printf("A cidade possui %d pontos turisticos \n", pontoturisticos);
   printf("a densidade populacional é de %f\n , por km.", dp);
   printf("O pib per capita é de: R$ %f por pessoa\n", pbc);
+  printf("o Super Poder da carta 1 e: %f\n", SuperPoder);
   //impressao carta02
 
   printf("Carta 2\n");
@@ -101,7 +103,13 @@ int main() {
   printf("O pib é: %f\n",pib1);
   printf("A cidade possui %d pontos turisticos \n", pontoturisticos1);
   printf("a densidade populacional é de %f\n , por km.", dp1);
-  printf("O pib per capita é de: R$ %f\n por pessoa", pbc1);
+  printf("O pib per capita é de: R$ %f por pessoa\n", pbc1);
+  printf("O super Poder da carta 2 e: %f\n", SuperPoder1);
+
+int cidadeMaior = (populacao>populacao1);
+printf(" A populacao da carta 1 %d e maior que da carta 2 %d, %d ", populacao, populacao1, cidadeMaior);
+  /* (população, área, PIB, número de pontos turísticos, PIB per capita e o
+   inverso da densidade populacional – quanto menor a densidade, maior o "poder").*/
     // Exibição dos Dados das Cartas:
     // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
     // Exiba os valores inseridos para cada atributo da cidade, um por linha.
