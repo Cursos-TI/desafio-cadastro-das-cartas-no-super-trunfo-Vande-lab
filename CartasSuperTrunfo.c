@@ -107,7 +107,18 @@ int main() {
   printf("O super Poder da carta 2 e: %f\n", SuperPoder1);
 
 int cidadeMaior = (populacao>populacao1);
-printf(" A populacao da carta 1 %d e maior que da carta 2 %d, %d ", populacao, populacao1, cidadeMaior);
+int populacaoMaior = (populacao>populacao1);
+int pibmaior = (pib>pib1);
+int densMenor =(dp<dp1);
+int ptm = (pontoturisticos>pontoturisticos1);
+  printf(" A populacao da carta 1 %d e maior que da carta 2 %d, %d\n ", populacao, populacao1, cidadeMaior);
+//printf("A populacao da %d, e maio do que a %d", populacao, populacao1,populacaoMaior);
+  printf("o pib da primeira carta e maio que da segunda %d\n", pibmaior);
+  printf("A densidade populacional da primeira carta e menor que da segunda, %d\n",densMenor);
+  printf("O numero de pontos turisticos da primeira carta e maior que da segunda, %d\n", ptm);
+
+
+
   /* (população, área, PIB, número de pontos turísticos, PIB per capita e o
    inverso da densidade populacional – quanto menor a densidade, maior o "poder").*/
     // Exibição dos Dados das Cartas:
