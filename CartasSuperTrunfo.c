@@ -117,6 +117,21 @@ int ptm = (pontoturisticos>pontoturisticos1);
   printf("A densidade populacional da primeira carta e menor que da segunda, %d\n",densMenor);
   printf("O numero de pontos turisticos da primeira carta e maior que da segunda, %d\n", ptm);
 
+  if (populacao>populacao1)
+  {
+   printf("A Populacao da carta 1 é maior que a populacao da carta 2.\n");
+  }else{
+printf("A popupacao da carta 2 é maior\n");
+
+  }
+  if (pontoturisticos>pontoturisticos1)
+  {
+    printf("A carta 1 venceu o numero de pontos turisticos\n");
+  }else{
+printf("A carta 2 tem mais pontos turisticos\n");
+
+  }
+  
 
 
   /* (população, área, PIB, número de pontos turísticos, PIB per capita e o
